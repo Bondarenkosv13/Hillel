@@ -23,5 +23,5 @@ class Test
 }
 
 $a = new Test ();
-echo $a -> getSum();
+echo "Сумма треинов равна ".$a -> getSum();
 
