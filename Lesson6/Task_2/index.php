@@ -21,17 +21,18 @@
 // Основное задание
 class User
 {
-    private $id;
+    public $id;
     private $password;
     private $email;
 
     public function SetId($id)
     {
         try {
-            if(gettype($id) !== 'integer')
+            if(!is_int($id))
             {
                 throw new Exception();
             }
+            $this->id = $id;
         }
         catch (Exception $ex)
         {
@@ -39,8 +40,6 @@ class User
 
 
         }
-        return $this->id = $id;
-
     }
 
     public function GetId ()
@@ -55,6 +54,7 @@ class User
             {
                 throw new Exception();
             }
+            $this->password = $password;
         }
         catch (Exception $ex)
         {
@@ -62,8 +62,6 @@ class User
 
 
         }
-        return $this->password = $password;
-
     }
 
 
@@ -78,7 +76,7 @@ class User
 
 
 $user = new User();
-$user->SetId(wfsdf);
+$user->SetId(12);
 $user->SetPassword('1234567');
 
 
