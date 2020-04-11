@@ -1,0 +1,16 @@
+{
+    "name": "sergey/task_2",
+    "authors": [
+        {
+            "name": "Bondarenkosv",
+            "email": "bondarenkosv13@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "Classes/",
+            "Interfaces\\": "Interfaces/"
+        }
+    }
+}
