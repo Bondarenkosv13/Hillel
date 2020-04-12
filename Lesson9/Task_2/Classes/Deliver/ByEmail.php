@@ -2,13 +2,13 @@
 namespace Classes\Deliver;
 
 use Interfaces\Deliver;
-use Interfaces\Format;
+
 
 class ByEmail implements Deliver
 {
 
-    public function Output(Format $format)
+    public function Output($formattedString)
     {
-        echo "Вывод формата ({$format}) по имейл";
+        echo "Вывод формата ({$formattedString}) по имейл";
     }
 }

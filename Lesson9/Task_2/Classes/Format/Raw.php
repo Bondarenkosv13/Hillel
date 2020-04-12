@@ -2,15 +2,14 @@
 
 namespace Classes\Format;
 
-
 use Interfaces\Format;
-use Logger;
+
 
 Class Raw implements Format
 {
-
-    public function Record(Logger $logger)
+    public function format($string)
     {
-        return $logger->getFormat();
+        return $string;
     }
+
 }

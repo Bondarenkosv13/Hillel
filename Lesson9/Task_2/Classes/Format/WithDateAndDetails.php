@@ -2,14 +2,13 @@
 namespace Classes\Format;
 
 use Interfaces\Format;
-use Logger;
 
 
 Class WithDateAndDetails implements Format
 {
 
-    public function Record(Logger $logger)
+    public function format($string)
     {
-        return date('Y-m-d H:i:s') . $logger->getFormat() . ' - With some details';
+        return date('Y-m-d H:i:s') . $string . ' - With some details';
     }
 }

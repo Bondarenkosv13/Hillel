@@ -3,5 +3,5 @@ namespace Interfaces;
 
 interface Deliver
 {
-    public function Output (Format $format);
+    public function Output ($formattedString);
 }

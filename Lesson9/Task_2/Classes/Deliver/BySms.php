@@ -2,13 +2,13 @@
 namespace Classes\Deliver;
 
 use Interfaces\Deliver;
-use Interfaces\Format;
+
 
 class BySms implements Deliver
 {
 
-    public function Output(Format $format)
+    public function Output($formattedString)
     {
-        echo "Вывод формата ({$format}) в смс";
+        echo "Вывод формата ({$formattedString}) в смс";
     }
 }
